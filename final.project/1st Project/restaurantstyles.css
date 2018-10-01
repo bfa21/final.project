@@ -1,0 +1,29 @@
+
+body {
+	max-width: 400px;
+    margin: 0 auto;
+}
+
+header, footer {
+    background-color: indianred;
+    color: black;
+	text-align: center;
+}
+
+.border {
+    border: thick solid blue;
+}
+
+#experience {
+    border: thick dashed orange;
+}
+
+.realnav {
+	float: left;
+}
+
+div.container {
+	min-height: 10em;
+    display: table-cell;
+    vertical-align: middle 
+}

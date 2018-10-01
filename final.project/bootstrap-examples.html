@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+                <meta charset="utf-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+                <title>Bootstrap Sample Page</title>
+
+                <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+				
+				
+				<style>
+				nav {
+				border-top: thin #5b7d87 solid;
+				border-bottom: thin #5b7d87 solid;
+				padding-top: 12px;
+				padding-bottom: 12px;
+				}
+				
+				nav .btn {
+				background-color: #5b7d87;
+				color: #fef9ff; 
+				}
+				
+				nav .btn:hover {
+				font-weight: bold;
+				}
+				
+				.carousel-item {
+				height: 200px;
+				}
+				
+				div.b {
+				margin-left: auto;
+				margin-right: auto;
+				width: 200px;
+				margin-bottom: 100px; <!-- space at the bottom of element -->
+			
+				}
+				
+				</style>
+				
+	</head>
+	<body>
+				
+				<script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
+	
+	
+	
+				
+			<nav>
+				<a class="btn badge-pill" href="">Contact Me</a>
+				<a class="btn" href="">Projects</a>
+			</nav>
+			
+        <div class="container">
+            
+            <div class="row">
+                <div  class="col-lg-3 col-md">
+                    <figure><img src="images/test.jpeg" class="img-fluid" /></figure>
+                </div>
+                
+                <div class="col-lg-9 col-md">
+                    
+					<p>I am a former Technolgy Management Student at Texas A&M University. I completed an internship at CBRE as an IT analyst. 
+					I am now looking to start my career into DevOps or Software Development.</p>
+	
+					<p>I was born and raised in Fort Worth, Texas. I attended Eastern Hills High School. 
+					I was a member of the marching band and AVID</p>
+					
+                </div>
+       
+       </div>
+
+<div class="b">	   
+<form class="needs-validation" novalidate>
+  <div class="form-row">
+    <div class="col-md-12">
+      <label for="validationCustom01"><b>Name:</b></label>
+      <input type="text" class="form-control" id="validationCustom01" placeholder="Name" value="" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-12">
+      <label for="validationCustom02"><b>Email:</b></label>
+      <input type="text" class="form-control" id="validationCustom02" placeholder="Email" value="" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-12">
+      <label for="validationCustom02"><b>Phone:</b></label>
+      <input type="text" class="form-control" id="validationCustom02" placeholder="Phone" value="" required>
+      <div class="valid-feedback">
+         Thank You!
+        </div>
+      </div>
+    </div>
+  <div class="form-row">
+    <div class="col-md-12">
+      <label for="validationCustom04">Reason for Inquiry?</label>
+      <select name="Inquire">
+		<option value="Catering">Catering</option>
+        <option value="PrivateParty">Private Party</option>
+        <option value="Feedback">Feedback</option>
+		<option value="Other">Other</option>
+	</select>
+		<div class="invalid-feedback">
+        Please provide feedback!
+		</div>
+      </div>
+	  </div>
+	  <div class="form-row">
+		<div class="col-md-12">
+			Additional Information: 
+			<textarea name="briefDescription"></textarea><br />
+		</div>
+	    </div>
+		<div class="form-row">
+			<div class="col-md-12">
+		<div>Have you ever been to the Restaurant?:<br />
+			<input type="radio" name="answer" value="YES" checked />Yes<br />
+			<input type="radio" name="answer" value="NO" />No<br />	
+		</div>
+		</div>
+		</div>
+		<div class="form-row">
+			<div class="col-md-12">
+		<div>
+		Best days to contact you:
+		</div>
+		<input type="checkbox" name="myChoices" value="Monday" unchecked/>M<br />
+		<input type="checkbox" name="myChoices" value="Tuesday" unchecked/>T<br />
+		<input type="checkbox" name="myChoices" value="Wednesday" unchecked/>W<br />
+		<input type="checkbox" name="myChoices" value="Thursday" unchecked/>T<br />
+		<input type="checkbox" name="myChoices" value="Friday" unchecked/>F<br />
+		</div>
+		
+		
+  <button class="btn btn-primary" type="submit">Submit</button><button class="btn btn-primary" type="reset">Reset</button>
+</form>
+</div>
+	   
+
+	   
+
+	   
+	   
+	   <script src="js/jquery-3.3.1.min.js"></script>
+       <script src="js/popper.min.js"></script>
+       <script src="js/bootstrap.min.js"></script>
+</body> 
+</html>

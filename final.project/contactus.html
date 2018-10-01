@@ -1,0 +1,184 @@
+<DOCTYPE html>
+<!--
+Name:Belair Albahagwi
+Date Created: 9/18/2018
+Most recent revision: 3:34PM
+-->
+<html lang="en">
+<head>
+
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+<!--Icons-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+<!--CSS-->
+	<link href="styles/restaurantstyles.css" rel="stylesheet" type="text/css" />
+	<title>The Player's Restaurant</title>
+</head>
+<body>
+
+	<script>
+		// Example starter JavaScript for disabling form submissions if there are invalid fields
+		(function() {
+		'use strict';
+		window.addEventListener('load', function() {
+		// Fetch all the forms we want to apply custom Bootstrap validation styles to
+		var forms = document.getElementsByClassName('needs-validation');
+		// Loop over them and prevent submission
+		var validation = Array.prototype.filter.call(forms, function(form) {
+		form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+		}, false);
+		});
+	}, false);
+		})();
+	</script>
+	
+	
+	<style>
+	
+	div.b {
+			margin-left: auto;
+			margin-right: auto;
+			width: 200px;
+			margin-bottom: 100px; <!-- space at the bottom of element -->
+			
+		}
+		
+	a.active {
+			background-color: black;
+			color: white;
+			text-decoration: none;
+		}	
+	a:hover:not( .active) {
+			background-color: blue;
+			color: white;
+			font-weight:bold; <!-- Bold links for Hover only -->
+		}
+		
+	nav .btn {
+				background-color: grey;
+				color: #fef9ff; 
+		}
+	
+	required {
+			color: #c00;
+			font-weight: bold;
+		}	
+		
+	a:visited {
+			color: blue;
+		}
+		
+	a:link {
+			color: white;	
+		}
+		
+	
+	</style>
+	<header>
+		<center>
+			<h1>Dans Mes Rêves</h>
+		</center>
+		<center>
+			<h3>New location in Benbrook in 2019!</h>
+		</center>
+	</header>
+		
+<div class="realnav">
+	<nav> 
+			<li><a class="btn badge-pill" href="restaurant.html"><i style="font-size:24px" class="fa">&#xf015;</i></a></li>
+			<li><a class="btn badge-pill" href="Menu.html">Menu</a></li>
+			<li><a class="active btn badge-pill" href="Contactus.html">Contact Us</a></li>
+	</nav>
+</div>	
+
+<div class="b">	   
+<form class="needs-validation" novalidate>
+  <div class="form-row">
+    <div class="col-md-12">
+      <label for="validationCustom01"><b>Name:</b></label>
+      <input type="text" class="form-control" id="validationCustom01" placeholder="Name" value="" required>
+      <div class="valid-feedback">
+        Merci beaucoup!
+      </div>
+    </div>
+    <div class="col-md-12">
+      <label for="validationCustom02"><b>Email:</b></label>
+      <input type="text" class="form-control" id="validationCustom02" placeholder="Email" value="" required>
+      <div class="valid-feedback">
+        Merci beaucoup!
+      </div>
+    </div>
+    <div class="col-md-12">
+      <label for="validationCustom02"><b>Phone:</b></label>
+      <input type="text" class="form-control" id="validationCustom02" placeholder="Phone" value="" required>
+      <div class="valid-feedback">
+         Merci beaucoup!
+        </div>
+      </div>
+    </div>
+  <div class="form-row">
+    <div class="col-md-12">
+      <label for="validationCustom04">Reason for Inquiry?</label>
+      <select name="Inquire">
+		<option value="Catering">Catering</option>
+        <option value="PrivateParty">Private Party</option>
+        <option value="Feedback">Feedback</option>
+		<option value="Other">Other</option>
+	</select>
+		<div class="invalid-feedback">
+        Please provide feedback!
+		</div>
+      </div>
+	  </div>
+	  <div class="form-row">
+		<div class="col-md-12">
+			Additional Information: 
+			<textarea name="briefDescription"></textarea><br />
+		</div>
+	    </div>
+		<div class="form-row">
+			<div class="col-md-12">
+		<div>Have you ever been to the Restaurant?:<br />
+			<input type="radio" name="answer" value="YES" checked />Yes<br />
+			<input type="radio" name="answer" value="NO" />No<br />	
+		</div>
+		</div>
+		</div>
+		<div class="form-row">
+			<div class="col-md-12">
+		<div>
+		Best days to contact you:
+		</div>
+		<input type="checkbox" name="myChoices" value="Monday" unchecked/>M<br />
+		<input type="checkbox" name="myChoices" value="Tuesday" unchecked/>T<br />
+		<input type="checkbox" name="myChoices" value="Wednesday" unchecked/>W<br />
+		<input type="checkbox" name="myChoices" value="Thursday" unchecked/>T<br />
+		<input type="checkbox" name="myChoices" value="Friday" unchecked/>F<br />
+		</div>
+		
+		
+  <button class="btn btn-primary" type="submit">Send Request</button><button class="btn btn-primary" type="reset">Reset</button>
+</form>
+<form method="post" id="myForm" action="dynaform.php" onSubmit="alert('Thank you for your feedback.');" >
+</div>
+</div>
+
+<!--Footer-->
+<footer> 
+     <p>21 West 7th Street, Fort Worth, Texas, 76113</p>
+	 <p>(817)-555-2121<p>
+</footer>
+		<script src="js/jquery-3.3.1.min.js"></script>
+       <script src="js/popper.min.js"></script>
+       <script src="js/bootstrap.min.js"></script>
+</body>	
+</html>

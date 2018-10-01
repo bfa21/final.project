@@ -1,0 +1,60 @@
+.alert {
+	font-family: arial;
+	background-color: red;
+    
+}
+
+html, body {
+    background-color: lightgrey;
+	margin: 0;
+	padding: 0;
+	
+}
+
+header, footer {
+    background-color: black;
+    color: white;
+	text-align: center;
+	font-family: Brush Script MT;
+	height: 100px;
+	font-size: +22;
+}
+
+
+nav {
+	background-color: white;
+	height: 50px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+
+li {
+    display:inline;
+    padding: 10px 30px;
+	font-family: Brush Script MT;
+	font-size: +20;
+}
+
+
+.border {
+    border: thick solid blue;
+}
+
+#experience {
+    border: thick dashed orange;
+}
+
+#fourth {
+		width: 100%;
+}
+
+footer {
+		width: 100%;
+		bottom: 0;
+		clear:both;
+}
+
+.a {
+		font-family: Brush Script MT;
+		font-size: +20;
+}
